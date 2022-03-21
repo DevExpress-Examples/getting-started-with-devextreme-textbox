@@ -7,7 +7,7 @@
             label-mode="floating"
             :max-length="20"
             :show-clear-button="true"
-            @enterKey="onEnterKey($event)"
+            @enter-key="onEnterKey($event)"
         /> 
     </div>
 </template>
