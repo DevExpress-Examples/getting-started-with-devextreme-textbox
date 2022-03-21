@@ -1,6 +1,6 @@
-# Getting Started with DevExtreme React Calendar
+# Getting Started with DevExtreme React TextBox
 
-This repository stores React source code for the following tutorial: [Getting Started with Calendar](https://js.devexpress.com/Documentation/Guide/UI_Components/Calendar/Getting_Started_with_Calendar).
+This repository stores React source code for the following tutorial: [Getting Started with TextBox](https://js.devexpress.com/Documentation/Guide/UI_Components/TextBox/Getting_Started_with_TextBox).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

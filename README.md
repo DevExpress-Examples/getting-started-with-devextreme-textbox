@@ -4,6 +4,6 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# Getting Started with DevExtreme Calendar
+# Getting Started with DevExtreme TextBox
 
-This repository stores the source code for the following tutorial: [Getting Started with Calendar](https://js.devexpress.com/Documentation/Guide/UI_Components/Calendar/Getting_Started_with_Calendar/).
+This repository stores the source code for the following tutorial: [Getting Started with TextBox](https://js.devexpress.com/Documentation/Guide/UI_Components/TextBox/Getting_Started_with_TextBox/).
