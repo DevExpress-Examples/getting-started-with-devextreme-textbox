@@ -4,11 +4,11 @@ This repository stores Vue source code for the following tutorial: [Getting Star
 
 ## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=vue.vscode-typescript-vue-plugin).
 
 ## Customize configuration
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+See [Vite Configuration Reference](https://vite.dev/config/).
 
 ## Project Setup
 
