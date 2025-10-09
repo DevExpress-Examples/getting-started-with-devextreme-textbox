@@ -3,6 +3,6 @@ import TextBoxContent from '../components/TextBoxContent.vue';
 </script>
 
 <template>
-  <TextBoxContent />
+  <TextBoxContent/>
 </template>
 

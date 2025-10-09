@@ -30,7 +30,7 @@ const onEnterKey = (): void => {
         @value-changed="onValueChanged"
         @enter-key="onEnterKey"
       />
-      
+
       <DxTextBox
         id="text-box-masked"
         label="Phone Number"
@@ -38,19 +38,19 @@ const onEnterKey = (): void => {
         mask="+1 (000) 000-0000"
         :mask-rules="maskRules"
       />
-      
+
       <DxTextBox
         id="text-box-password"
         label="Password"
         label-mode="floating"
         mode="password"
       />
-      
+
       <DxTextBox
         id="text-box-with-placeholder"
         placeholder="Enter your name here..."
       />
-      
+
       <DxTextBox
         id="text-box-disabled"
         label="Disabled"
@@ -59,7 +59,7 @@ const onEnterKey = (): void => {
         value="John Smith"
       />
     </div>
-    
+
     <div id="value-container">
       The TextBox value is: <span id="textbox-value">{{ textBoxValue }}</span>
     </div>

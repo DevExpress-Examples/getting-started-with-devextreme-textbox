@@ -8,7 +8,7 @@ import { DxTextBoxTypes } from 'devextreme-angular/ui/text-box';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  textBoxValue: string = '';
+  textBoxValue = '';
 
   maskRules: Record<string, RegExp> = {
     X: /[02-9]/,

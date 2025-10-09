@@ -9,7 +9,7 @@ $(() => {
       DevExpress.ui.notify('The Enter key pressed', 'success', 2000);
     },
   }).dxTextBox('instance');
-  
+
   $('#text-box-masked').dxTextBox({
     label: 'Phone Number',
     labelMode: 'floating',
@@ -18,17 +18,17 @@ $(() => {
       X: /[02-9]/,
     },
   });
-  
+
   $('#text-box-password').dxTextBox({
     label: 'Password',
     labelMode: 'floating',
     mode: 'password',
   });
-  
+
   $('#text-box-with-placeholder').dxTextBox({
     placeholder: 'Enter your name here...',
   });
-  
+
   $('#text-box-disabled').dxTextBox({
     label: 'Disabled',
     labelMode: 'floating',

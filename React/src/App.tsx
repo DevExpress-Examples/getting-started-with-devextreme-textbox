@@ -5,12 +5,12 @@ import TextBox from 'devextreme-react/text-box';
 import type { TextBoxTypes } from 'devextreme-react/text-box';
 import notify from 'devextreme/ui/notify';
 
+const maskRules = {
+  X: /[02-9]/,
+};
+
 function App(): JSX.Element {
   const [textBoxValue, setTextBoxValue] = useState<string>('');
-
-  const maskRules = {
-    X: /[02-9]/,
-  };
 
   const onValueChanged = useCallback((e: TextBoxTypes.ValueChangedEvent) => {
     setTextBoxValue(e.value ?? '');
@@ -30,7 +30,7 @@ function App(): JSX.Element {
           onValueChanged={onValueChanged}
           onEnterKey={onEnterKey}
         />
-        
+
         <TextBox
           id="text-box-masked"
           label="Phone Number"
@@ -38,19 +38,19 @@ function App(): JSX.Element {
           mask="+1 (000) 000-0000"
           maskRules={maskRules}
         />
-        
+
         <TextBox
           id="text-box-password"
           label="Password"
           labelMode="floating"
           mode="password"
         />
-        
+
         <TextBox
           id="text-box-with-placeholder"
           placeholder="Enter your name here..."
         />
-        
+
         <TextBox
           id="text-box-disabled"
           label="Disabled"
@@ -59,7 +59,7 @@ function App(): JSX.Element {
           defaultValue="John Smith"
         />
       </div>
-      
+
       <div id="value-container">
         The TextBox value is: <span id="textbox-value">{textBoxValue}</span>
       </div>

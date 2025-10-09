@@ -5,7 +5,8 @@
       label="Full Name"
       labelMode="floating"
       (onValueChanged)="onValueChanged($event)"
-      (onEnterKey)="onEnterKey()">
+      (onEnterKey)="onEnterKey()"
+    >
     </dx-text-box>
 
     <dx-text-box
@@ -13,19 +14,22 @@
       label="Phone Number"
       labelMode="floating"
       mask="+1 (000) 000-0000"
-      [maskRules]="maskRules">
+      [maskRules]="maskRules"
+    >
     </dx-text-box>
 
     <dx-text-box
       id="text-box-password"
       label="Password"
       labelMode="floating"
-      mode="password">
+      mode="password"
+    >
     </dx-text-box>
 
     <dx-text-box
       id="text-box-with-placeholder"
-      placeholder="Enter your name here...">
+      placeholder="Enter your name here..."
+    >
     </dx-text-box>
 
     <dx-text-box
@@ -33,7 +37,8 @@
       label="Disabled"
       labelMode="floating"
       [disabled]="true"
-      value="John Smith">
+      value="John Smith"
+    >
     </dx-text-box>
   </div>
 
