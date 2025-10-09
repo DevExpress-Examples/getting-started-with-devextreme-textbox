@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { ClickEvent } from 'devextreme/ui/button';
+import notify from 'devextreme/ui/notify';
+import { DxTextBoxTypes } from 'devextreme-angular/ui/text-box';
 
 @Component({
   selector: 'app-root',
@@ -7,14 +8,17 @@ import { ClickEvent } from 'devextreme/ui/button';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'Angular';
+  textBoxValue: string = '';
 
-  counter = 0;
+  maskRules: Record<string, RegExp> = {
+    X: /[02-9]/,
+  };
 
-  buttonText = 'Click count: 0';
+  onValueChanged(e: DxTextBoxTypes.ValueChangedEvent): void {
+    this.textBoxValue = e.value ?? '';
+  }
 
-  onClick(e: ClickEvent): void {
-    this.counter++;
-    this.buttonText = `Click count: ${this.counter}`;
+  onEnterKey(): void {
+    notify('The Enter key pressed', 'success', 2000);
   }
 }

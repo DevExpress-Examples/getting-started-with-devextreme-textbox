@@ -1,4 +1,24 @@
-.default-style {
-  margin: 50px;
-  width: 90vw;
+#app-container {
+  width: 900px;
+  position: relative;
+}
+
+#textbox-container {
+  margin-bottom: 20px;
+}
+
+#text-box,
+#text-box-masked,
+#text-box-password,
+#text-box-with-placeholder,
+#text-box-disabled {
+  margin-bottom: 20px;
+}
+
+#value-container {
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
 }

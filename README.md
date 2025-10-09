@@ -13,15 +13,17 @@ This repository stores the code examples of the TextBox component for the [Getti
 
 ## Files to Review
 
+- **jQuery**
+    - [index.js](jQuery/src/index.js)
+    - [index.html](jQuery/src/index.html)
 - **Angular**
     - [app.component.html](Angular/src/app/app.component.html)
     - [app.component.ts](Angular/src/app/app.component.ts)
-- **jQuery**
-    - [index.js](jQuery/src/index.js)
 - **React**
-    - [App.js](React/src/App.js)
+    - [App.tsx](React/src/App.tsx)
 - **Vue**
     - [App.vue](Vue/src/App.vue)
+    - [TextBoxContent.vue](Vue/src/components/TextBoxContent.vue)
 
 ## Documentation
 

@@ -1,3 +1,43 @@
-<div class="default-style">
-  <dx-button [text]="buttonText" (onClick)="onClick($event)"></dx-button>
+<div id="app-container">
+  <div id="textbox-container">
+    <dx-text-box
+      id="text-box"
+      label="Full Name"
+      labelMode="floating"
+      (onValueChanged)="onValueChanged($event)"
+      (onEnterKey)="onEnterKey()">
+    </dx-text-box>
+
+    <dx-text-box
+      id="text-box-masked"
+      label="Phone Number"
+      labelMode="floating"
+      mask="+1 (000) 000-0000"
+      [maskRules]="maskRules">
+    </dx-text-box>
+
+    <dx-text-box
+      id="text-box-password"
+      label="Password"
+      labelMode="floating"
+      mode="password">
+    </dx-text-box>
+
+    <dx-text-box
+      id="text-box-with-placeholder"
+      placeholder="Enter your name here...">
+    </dx-text-box>
+
+    <dx-text-box
+      id="text-box-disabled"
+      label="Disabled"
+      labelMode="floating"
+      [disabled]="true"
+      value="John Smith">
+    </dx-text-box>
+  </div>
+
+  <div id="value-container">
+    The TextBox value is: <span id="textbox-value">{{ textBoxValue }}</span>
+  </div>
 </div>
