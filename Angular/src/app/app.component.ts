@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import notify from 'devextreme/ui/notify';
-import { DxTextBoxTypes } from 'devextreme-angular/ui/text-box';
+import { DxTextBoxModule, DxTextBoxTypes } from 'devextreme-angular/ui/text-box';
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss'],
-    standalone: false
+  selector: 'app-root',
+  imports: [DxTextBoxModule],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   textBoxValue = '';
