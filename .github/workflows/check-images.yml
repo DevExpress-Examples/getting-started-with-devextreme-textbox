@@ -45,7 +45,7 @@ jobs:
           for img in $images; do
             # Normalize path: remove leading ./
             normalized_img="${img#./}"
-
+            
             # Check if the image is referenced in README.md
             if ! grep -q "$normalized_img" "./README.md"; then
               unused+=("$normalized_img")
@@ -59,11 +59,11 @@ jobs:
             echo "" >> $GITHUB_STEP_SUMMARY
             echo "| Image Name | Path |" >> $GITHUB_STEP_SUMMARY
             echo "|------------|------|" >> $GITHUB_STEP_SUMMARY
-
+            
             for img in "${unused[@]}"; do
               name=$(basename "$img")
               echo "$name -> $img"
-
+              
               echo "| $name | $img |" >> $GITHUB_STEP_SUMMARY
             done
 
