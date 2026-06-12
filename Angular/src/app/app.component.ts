@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import notify from 'devextreme/ui/notify';
 import { DxTextBoxModule, DxTextBoxTypes } from 'devextreme-angular/ui/text-box';
 
@@ -6,6 +6,7 @@ import { DxTextBoxModule, DxTextBoxTypes } from 'devextreme-angular/ui/text-box'
   selector: 'app-root',
   imports: [DxTextBoxModule],
   templateUrl: './app.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
